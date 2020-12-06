@@ -23,7 +23,6 @@
                     android:layout_height="wrap_content"
                     android:text="@string/add_gdg"
                     android:contentDescription="@string/add_gdg"
-                    android:textColor="#AAAAAA"
                     app:layout_constraintStart_toStartOf="parent"
                     android:layout_marginStart="@dimen/spacing_normal"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -165,16 +164,14 @@
 
             <Button
                     android:id="@+id/button"
-                    android:text="Ok"
-                    android:layout_width="40dp"
-                    android:layout_height="24dp"
+                    android:text="@string/submit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:contentDescription="@string/submit_button_description"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/contentGroup"
-                    android:backgroundTint="#00FF00"
-                    android:textColor="#FF0000"
-                    android:textSize="12sp"
+                    android:accessibilityLiveRegion="polite"
                     android:layout_marginBottom="12dp"
                     android:layout_marginEnd="40dp"
                     android:onClick="@{() -> viewModel.onSubmitApplication()}"/>
